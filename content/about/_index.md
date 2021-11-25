@@ -4,7 +4,7 @@ cascade:
 description: |
   Personal website of Karthik Thrikkadeeri
 show_header: true
-sidebar_left: false
+sidebar_left: true
 title: About me
 ---
 

@@ -1,11 +1,7 @@
 ---
 title: Karthik Thrikkadeeri
-subtitle: "Research Assistant, NCF India"
-description: Sit down, relax, and get to know Hugo Apéro. Built on top of Blogophonic,
-  we wanted to create a polished Hugo theme with the right features for a true personal
-  website. We set out to create a theme that is a pleasure to learn, and one that
-  helps others get to know you better. It is more than a blog, with flexible custom
-  layouts that help you introduce yourself online.
+subtitle: "Research Assistant @NCF India"
+description: I am a researcher in ecology and my work revolves mostly around birds and their relationship with the environment. Beyond profession, birdwatching occupies a prominent role in my life and is much more than a hobby. I am also passionate about poetry. I am currently in the process of structuring a framework for my life comprised of these central interests of mine.
 image_left: false
 images:
 - img/dp1.jpg

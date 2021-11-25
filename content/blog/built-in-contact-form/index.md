@@ -1,55 +1,42 @@
 ---
-author: Eric Anderson
 categories:
-- Theme Features
-date: "2019-07-01"
+- Notebooks
+date: "2019-12-22"
 draft: false
-excerpt: This theme has a form-to-email feature built in, thanks to the simple Formspree
-  integration. All you need to activate the form is a valid recipient email address
-  saved in the form front matter.
+excerpt: Hello! What am I and why do I have this blog?
 layout: single
-subtitle: Form to email feature powered by Formspree
+title: Hello!
+subtitle: 
 tags:
-- hugo-site
-title: Built-in Contact Form
+- beginning
+- blog
+- czech republic
+- discovery
+- ecology
+- fresh
+- kid
+- lost
+- masters
+- minimalism
+- new beginning
+- past self
+- personal development
+- personal growth
+- start
+- student
+- travel
+- wildlife
+- younger self
 ---
 
-![Formspree Logo](formspree-logo.png)
+My name is Karthik Thrikkadeeri. I am 20 years old, and India is what I call “home”. However, I am currently studying Master of Science in Ecology, in the Czech Republic. Some of my interests include wildlife/ecology, reading, travelling, minimalism, a bit of philosophy, personal growth, aaand… writing.
 
-## [Formspree](https://formspree.io) makes it easy to receive submissions from HTML forms on your static website.
+Eight years ago, I had started a blog. Or rather, multiple blogs (I don’t even remember the details). I ended up settling on one of them, and it ran for around 4-5 years. It’s hard to fit a genre on the kind of content I was putting out. But it essentially served as an outlet for my crazy ideas. Although today I cringe at almost every sentence from my old posts, I have still retained the blog as it was, simply because it is interesting to look back at my past self.
 
----
+Well, a lot has changed since then, and I have learned several things while I’ve also unlearned some. I now think in ways that I never did before. A lot more things make sense to me now. I have discovered and learned a lot about myself and life in general. At the same time, this has also opened up numerous challenges for myself. There are many questions I need to answer for myself, many ideas to be put to the test, and simply many more things to discover about who I am and who I want to be. And who knows how long that will take, or where it will take me?
 
-### Functional Form
+I am currently a “lost” soul, but I accept that with open arms. I have lately figured out what kind of writing appeals to me, and I intend to work on my own. I also believe that one’s experiences and adventures lose half their value if left solely in the realm of memory. And that is why I started this new blog.
 
-This theme has a **form-to-email** feature built in, thanks to the simple Formspree integration. All you need to activate the form is a valid recipient email address saved in the front matter of the form
-(`/content/forms/contact.md`). Of course, the example shown below (`your@email.here`) must not be used. Please use your actual email address.
+That’s enough context for now. Until next time.
 
-```toml
-# please replace with a valid Formspree form id or email address
-formspree_form_id: your@email.here
-```
-
-Update that file and you're ready to begin receiving submissions. Just submit
-the active form for the first time, and complete the email address verification
-step with Formspree, and your contact form is live. The next time someone
-fills it out, the submission will land in your inbox.
-
-### Multiple Layouts
-
-The files included with the theme have a contact page ready for copy/paste, or
-you can type `hugo new forms/contact.md` and you're off to the races. There are two
-layouts for `forms` – `split-right`, and `split-left` – you guessed it, one puts
-the form on the right and the other on the left. You just fill out the front
-matter, and the rest is automatic.
-
-```toml
-# layout options: split-right or split-left
-layout: split-right
-```
-
-![Contact Form Split Right Layout Screenshot](built-in-contact-form-screenshot.png)
-
-Both layouts display the page title and description opposite the form, and you
-can also choose to show your social icon links if you have those configured in
-the `config.toml` file.
+![Cool photo](featured.jpg)

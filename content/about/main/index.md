@@ -6,11 +6,11 @@ use_featured: false # if false, use most recent by date
 number_categories: 3 # set to zero to exclude
 show_intro: true
 intro: |
- I am Karthik Thrikkadeeri (alias Trick D. Eerie), a 22-year-old from Kerala, India, currently living in the Czech Republic. I am a student professionally and officially of ecology, but informally and more generally also of literature and philosophy (or so I like to think).
+ I am Karthik Thrikkadeeri (alias Trick D. Eerie), a 22-year-old from Kerala, India. I am a student professionally of ecology, but informally and more generally also of literature and philosophy (or so I like to think).
 
- Although I don’t know a fair many languages, I do love how languages work. Consequently, I tend to get excited over small things like ingenious wordplay and writing with many layers to it. Regardless, I believe that writing can be immensely powerful.
+ Although I don’t know a fair many languages (and am not necessarily passionate about learning many), I do love how languages work. Consequently, I tend to get excited over small things like ingenious wordplay and writing with many layers to it. Regardless though, I believe that writing can be immensely powerful.
 
- I love all things wild and free! Nature to me is endlessly exciting, intriguing and calming. I don’t get lost in nature as often as I’d like, and instead most often find myself looking and listening for birds (birding!). I tend to satiate my freeness- and lostness-cravings with travel, mostly preferring to go off the trodden path.
+ I love all things wild and free! Nature to me is endlessly exciting, intriguing and calming. I don’t *get lost* in nature as often as I’d like, and instead most often find myself looking and listening for birds (birding!). I tend to satiate my freeness- and lostness-cravings with travel, mostly preferring to go off the trodden path.
 
  I consider myself to be a minimalist in all aspects of life. I constantly struggle with the way the world runs nowadays, and I lament how everyone consciously or otherwise madly chases after “more”. Highly old-fashioned in this regard, I often find myself wistful for the “good old days”---times before even mine, but familiar (and very attractive) to me almost as legend---and pondering on how it all would be if things were to change. Lately, I have realised that a lot of the ideas I have or stumble upon invariably link back to this in one way or another.
 
