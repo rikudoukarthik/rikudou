@@ -1,6 +1,4 @@
 ---
-categories:
-- Notebooks
 date: "2019-12-22"
 draft: false
 excerpt: Hello! What am I and why do I have this blog?
@@ -8,6 +6,8 @@ layout: single
 title: Hello!
 subtitle: 
 tags:
+categories:
+- Notebooks
 - beginning
 - blog
 - czech republic
