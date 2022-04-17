@@ -3,7 +3,7 @@ date: "2020-03-27"
 draft: false
 excerpt: 
 layout: single
-title: Under the Auspices of Birds
+title: Under the auspices of birds
 subtitle: 
 categories:
 - Playing with Names

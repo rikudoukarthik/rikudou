@@ -3,7 +3,7 @@ date: "2020-05-03"
 draft: false
 excerpt: 
 layout: single
-title: Of Life and Death
+title: Of life and death
 subtitle: 
 categories:
 - Notebooks
