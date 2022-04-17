@@ -52,4 +52,4 @@ Even being completely oblivious to these divine and Roman connections, one still
 
 <br>
 
-<iframe width="640" height="518" src="https://macaulaylibrary.org/asset/318148271/embed/640" frameborder="2" allowfullscreen style="width:640px;" data-external="1"></iframe>
+<iframe width="640" height="518" src="https://macaulaylibrary.org/asset/318148271/embed/640" frameborder="0" allowfullscreen style="width:640px;" data-external="1"></iframe>
