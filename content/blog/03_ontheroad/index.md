@@ -22,7 +22,6 @@ tags:
 - tales
 - travel
 - wanderlust
-fig_caption: true
 ---
 
 I am at home on the road, helmet-clad.
