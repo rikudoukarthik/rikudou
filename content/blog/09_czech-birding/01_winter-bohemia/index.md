@@ -3,10 +3,8 @@ date: "2021-02-16"
 draft: false
 title: Winter birding in Bohemia
 subtitle: ""
-excerpt: Grid is the very first CSS module created specifically to solve the layout
-  problems we’ve all been hacking our way around for as long as we’ve been making
-  websites.
-weight: 1
+excerpt: 
+weight: 
 ---
 
 As I near the end of my stay in the Czech Republic, I have been feeling quite guilty about not having travelled enough and I’ve had enough of diligently waiting for the pandemic to pass. Luckily for me, this has been an unusually cold winter, so I won’t be missing out on *that* experience. And I still have a lot of birding to do here.
