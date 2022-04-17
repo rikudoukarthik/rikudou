@@ -153,7 +153,7 @@ I also have a lot of species left to tick, which I am hoping won’t be hard as 
 ## 2021
 
 <figure>
-    <img src="north-bohemia.webp"
+    <img src="featured-north-bohemia.webp"
          alt="">
     <figcaption>Beautiful northern Bohemian forest in winter.</figcaption>
 </figure>
