@@ -101,7 +101,7 @@ The path around the reservoir is on hilly terrain, so for a large part of the wa
 Overall, we must have seen at least 15,000 birds of which more than half were just gulls. A remarkable place and a remarkable experience. We departed after [four and a half hours in Most](https://ebird.org/checklist/S81099998), to search for two regular Whooper Swans. The twitch was unsuccessful though, and after finishing the rest of our lunch, we headed back to Prague from where I had my train back at 1830. Needless to say, we were both (gladly) exhausted from the walking and the cold. Honza’s prophecy came true as my train was delayed by an hour. I ended the night with a long warm shower, my mind occupied with trying to process the day’s events and excited for the next trip. I was able to witness how fun birding can be in even the harshest of conditions.
 
 <figure>
-    <img src="birds.webp"
+    <img src="featured-birds.webp"
          alt="">
     <figcaption>Birds, birds and more birds in Most Reservoir.</figcaption>
 </figure>
