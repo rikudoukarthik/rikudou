@@ -138,7 +138,7 @@ Again, nothing crazy after that except for some Redwings flying over at night. I
 
 I also witnessed my very first sparrowhawk hunt at point blank range! Towards the end of the observation, I was nearing a flock of ~40 rock pigeons feeding on the field near the road and was taking pictures of a few of them who had flown closer to me than the rest. I must have moved too close because the pigeons took off in flight. With that, I also lost my interest in them and was about to move along when out of nowhere a dark mass descended abruptly onto one of the pigeons and slammed it down onto the ground. I only then realised it was a sparrowhawk, and was amazed at having gotten such a point-blank view of the hunt (it happened ~20ft from me). I was even more surprised at how calm the sparrowhawk remained despite seeing me quite clearly so close to it---it gave me a few sexy stares. Then, guilt dawned on me, as I was the reason the pigeon got caught (pitying a pigeon?). All this in the span of a few seconds, 10 at most, while busy with the camera. Then, the sparrowhawk looked at me again then at the sky and gave a short call, and as suddenly as before another mass descended on the scene. This time, it was a kestrel (the same male I always spot in the area) attacking the sparrowhawk. The shortest of scuffles (a couple of seconds) ensued, during which the pigeon flew for its life. On seeing this, the kestrel went chasing the earlier flock of pigeons, while the poor sparrowhawk dejectedly returned to somewhere beyond the buildings.
 
-<figure align="middle">
+<figure style="text-align:center">
     <img src="the-pandemic-year.webp"
          alt="" width="200px">
     <figcaption>Gotta get that nightingale!</figcaption>
