@@ -35,7 +35,7 @@ These notable priests were initially known as *auspices* (singular: *auspex* [â€
 
 <figure style="text-align:center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Augur%2C_Nordisk_familjebok.png"
-       width="100" height="300"
+       width="150" height="300"
        alt="Augur, Nordisk familjebok.png">
 <figcaption>An augur holding a lituus, the curved wand often used as a symbol of augury on Roman coins. <i>Photo: Wikimedia Commons</i></figcaption>
 </figure>
@@ -52,4 +52,4 @@ Even being completely oblivious to these divine and Roman connections, one still
 
 <br>
 
-<iframe width="800" height="380" src="https://macaulaylibrary.org/asset/318148271/embed/800" frameborder="0" allowfullscreen="" style="width:800px;" data-external="1"></iframe>
+<iframe width="640" height="518" src="https://macaulaylibrary.org/asset/318148271/embed/640" frameborder="0" allowfullscreen style="width:640px;" data-external="1"></iframe>
