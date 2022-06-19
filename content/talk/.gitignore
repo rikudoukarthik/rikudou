@@ -1,0 +1,44 @@
+.Rproj.user
+.Rhistory
+.Ruserdata
+
+*.RData
+*.Rproj
+
+# RMD caches
+*_cache/
+*_files/
+
+# RDS file with login credentials
+*.rds
+
+# data files
+*.txt
+*.zip
+*.pdf
+*.docx
+*.pptx
+
+# folders in repo
+Literature/
+data/boundaries_IN_PA_WII/
+data/boundaries_IN_admin_old/
+data/in_LULC/
+data/in_LULC_USGS/
+# to stop tracking the MODIS TIFs that get downloaded with each full run
+data/in_LULC_MODIS/
+# posters
+example_betterland_template_files/
+# Zoom recording
+recording/
+
+example_betterland_template.Rmd
+example_betterland_template.html
+example_betterport_template.Rmd
+example_html_template.Rmd
+
+03_presentation_IOC_ppt.Rmd
+
+
+
+
