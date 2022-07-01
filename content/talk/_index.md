@@ -1,22 +1,18 @@
 ---
 title: Talks & workshops
 author: Karthik Thrikkadeeri
-description: 
+description: |
+  Events I have been invited to present at, shared along with slides, source code, videos, and other linkable resources.
 layout: list
-show_author_byline: true
+show_author_byline: false
 show_post_date: true
-show_post_thumbnail: true
 show_post_time: true
-sidebar:
-  author: Karthik Thrikkadeeri
-  description: 
-  show_sidebar_adunit: false
-  text_link_label: Subscribe via RSS
-  text_link_url: /talk/index.xml
-  title: Talks and presentations
+show_post_thumbnail: true
+thumbnail_left: false
+
 cascade:
   author: Karthik Thrikkadeeri
-  show_author_byline: true
+  show_author_byline: false
   show_comments: false
   show_post_date: true
   show_post_time: true
