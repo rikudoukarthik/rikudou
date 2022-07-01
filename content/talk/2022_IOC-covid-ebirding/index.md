@@ -3,7 +3,7 @@ title: "The impact of the COVID-19 pandemic on birding and birds in India"
 authors: 
   - Karthik Thrikkadeeri
 draft: false
-publishdate: "2021-03-20"
+publishdate: "2022-07-01"
 
 event: International Ornithological Congress 2022
 event_url: https://iocongress2022.com/
@@ -12,7 +12,7 @@ abstract: ""
 summary: "The pandemic is the most-devastating phenomenon on human life of the recent past. How has it affected citizen science efforts in bird monitoring in India?"
 date: "2022-08-14"
 date_end: "2022-08-20"
-all_day: false
+all_day: true
 
 
 categories:
@@ -25,11 +25,11 @@ links:
 - icon: images
   icon_pack: fas
   name: slides
-  url: https://alison.netlify.app/ares-kind-tools/
+  url: https://kartrick.netlify.app/ioc-covid/
 - icon: github
   icon_pack: fab
   name: code
-  url: https://github.com/rikudoukarthik/covid-ebirding
+  url: https://github.com/rikudoukarthik/my-talks
 show_post_time: false
 ---
 
