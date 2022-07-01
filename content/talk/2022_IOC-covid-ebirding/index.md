@@ -9,7 +9,7 @@ event: International Ornithological Congress 2022
 event_url: https://iocongress2022.com/
 location: Fully virtual conference
 abstract: ""
-summary: "The pandemic is the most-devastating phenomenon on human life of the recent past. How has it affected citizen science efforts in bird monitoring in India?"
+summary: "There is no phenomenon in the recent past that has had a more devastating impact on human life than the COVID-19 pandemic. How has this phenomenon affected citizen science efforts in bird monitoring in India?"
 date: "2022-08-14T08:00:00Z"
 date_end: "2022-08-20T20:00:00Z"
 all_day: true
