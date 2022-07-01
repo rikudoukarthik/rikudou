@@ -1,5 +1,5 @@
 ---
-title: Talks and presentations
+title: Talks & workshops
 author: Karthik Thrikkadeeri
 description: 
 layout: list
