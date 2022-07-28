@@ -51,7 +51,7 @@ knitr::include_graphics("frost-boots.jpg")
 ```
 
 ```{r out.width="50%"}
-knitr::include_graphics("bark-beetles.webp")
+knitr::include_graphics("bark-beetles.jpg")
 ```
 ```{r out.width="50%"}
 knitr::include_graphics("noodles.webp")
