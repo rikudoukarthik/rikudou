@@ -16,7 +16,8 @@ sidebar:
   title: Czech Birding
 
 cascade:
-  series: Czech Birding
+  series: 
+  - Czech Birding
   author: Karthik Thrikkadeeri
   layout: single-series
   show_author_byline: true
