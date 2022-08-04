@@ -82,25 +82,29 @@ enableEmoji = true
   # Icon pack "fas" includes solid icons, see: https://fontawesome.com/icons?d=gallery&s=solid&m=free
   # Icon pack "far" includes regular icons, see: https://fontawesome.com/icons?d=gallery&s=regular&m=free
   [[params.social]]
-      icon      = "github" # icon name without the 'fa-'
-      icon_pack = "fab"
-      url       = "https://github.com/rikudoukarthik/"
+      icon      = "google-scholar" # icon name without the 'fa-'
+      icon_pack = "ai"
+      url       = "https://scholar.google.co.in/citations?user=rGqtkNgAAAAJ&hl=en"
   [[params.social]]
       icon      = "orcid" # icon name without the 'fa-'
       icon_pack = "ai"
       url       = "https://orcid.org/0000-0003-2863-5879"
   [[params.social]]
-      icon      = "instagram" # icon name without the 'fa-'
+      icon      = "github" # icon name without the 'fa-'
       icon_pack = "fab"
-      url       = "https://www.instagram.com/rikudoukarthik/"
+      url       = "https://github.com/rikudoukarthik/"
+  [[params.social]]
+      icon      = "stackoverflow" # icon name without the 'fa-'
+      icon_pack = "ai"
+      url       = "https://stackoverflow.com/users/13000254/karthik-thrikkadeeri"
+  [[params.social]]
+      icon      = "inaturalist" # icon name without the 'fa-'
+      icon_pack = "ai"
+      url       = "https://www.inaturalist.org/people/337978"
   [[params.social]]
       icon      = "twitter" # icon name without the 'fa-'
       icon_pack = "fab"
       url       = "https://twitter.com/TrickDEerie"
-  [[params.social]]
-      icon      = "rss" # icon name without the 'fa-'
-      icon_pack = "fas"
-      url       = "/blog/index.xml"
 
 [taxonomies]
   category = "categories"
@@ -133,7 +137,7 @@ enableEmoji = true
   # Configure footer  
   [[menu.footer]]
     name = "Made with 💙"
-    title = "Made with Hugo Apéro and blogdown and coffee"
+    title = "Made with Hugo Apéro and blogdown"
     url = "/colophon/"
     weight = 1
   [[menu.footer]]
@@ -141,6 +145,11 @@ enableEmoji = true
     title = "Contact form"
     url = "/contact/"
     weight = 2
+  [[menu.footer]]
+    name = "RSS"
+    title = "Site RSS Feed"
+    url = "/blog/index.xml"
+    weight = 3
 
 # see https://gohugo.io/about/hugo-and-gdpr/    
 [privacy]
