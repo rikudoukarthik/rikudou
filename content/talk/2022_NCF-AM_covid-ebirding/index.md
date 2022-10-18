@@ -9,7 +9,7 @@ event: Nature Conservation Foundation Annual Meet 2022
 event_url: 
 location: Mysuru, Karnataka, India
 abstract: ""
-summary: "There is no phenomenon in the recent past that has had a more devastating impact on human life than the COVID-19 pandemic. A speed talk summarising how this phenomenon has affected citizen science efforts in bird monitoring in India?"
+summary: "There is no phenomenon in the recent past that has had a more devastating impact on human life than the COVID-19 pandemic. A speed talk summarising how this phenomenon has affected citizen science efforts in bird monitoring in India."
 date: "2022-10-10T10:00:00Z"
 date_end: "2022-10-12T20:00:00Z"
 all_day: true
