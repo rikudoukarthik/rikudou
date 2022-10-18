@@ -29,7 +29,7 @@ links:
 - icon: github
   icon_pack: fab
   name: code
-  url: https://github.com/rikudoukarthik/my-talks
+  url: https://github.com/rikudoukarthik/my-talks/tree/main/IOC-covid
 show_post_time: false
 ---
 
