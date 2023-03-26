@@ -1,7 +1,7 @@
 ---
 date: "2023-03-26"
 draft: false
-formspree_form_id: rikudoukarthik@gmail.com
+formspree_form_id: "mbjeabla"
 layout: split-right
 name: Contact Us Form
 show_poweredby_formspree: true
