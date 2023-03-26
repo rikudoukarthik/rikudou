@@ -2,7 +2,6 @@
 date: "2021-01-05"
 draft: false
 excerpt: 
-layout: single-sidebar
 title: At the turn of the year…
 subtitle: 
 categories:

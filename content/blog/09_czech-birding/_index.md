@@ -5,7 +5,7 @@ description: Accounts of birding trips from my time in Czechia.
 layout: list-sidebar
 show_author_byline: true
 show_post_date: true
-show_post_thumbnail: false
+show_post_thumbnail: true
 
 sidebar:
   author: Karthik Thrikkadeeri
