@@ -110,9 +110,11 @@ On the walk back, we were all smiles and took it slow. We even got a fleeting gl
 
 And thus we ended our fantastic multi-day trip, still processing it and yet looking forward to the next. I didn’t do much after getting to my room, and at 18:00 I passed out for 14 hours. The trip was immensely fun, trying, spontaneous, and a great success. As usual, I was mesmerised and completely taken in by the truly infectious passion for birds. This was another one for the history books.
 
-```{r out.width="99%", echo=FALSE}
-knitr::include_graphics("featured-happy-faces.webp")
-```
+<figure>
+    <img src="featured-happy-faces.webp"
+         alt="">
+    <figcaption>Happy faces after being rewarded with 7 Western Capercaillies. Photo: Honza Grünwald.</figcaption>
+</figure>
 
 ## List of lifers, 26--28 April 2021
 

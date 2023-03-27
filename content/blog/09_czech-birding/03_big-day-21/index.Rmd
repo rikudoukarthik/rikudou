@@ -1,6 +1,6 @@
 ---
 title: "Global Big Day 2021"
-date: "2021-05-14"
+date: "2021-05-15"
 draft: false
 subtitle: ""
 output: blogdown::html_page
