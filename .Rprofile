@@ -19,7 +19,7 @@ options(
 
   blogdown.author = "Karthik Thrikkadeeri",
   blogdown.ext = ".Rmd",
-  blogdown.method = "html",
+  blogdown.method = "markdown",
   blogdown.subdir = "blog",
   blogdown.yaml.empty = TRUE,
   blogdown.new_bundle = TRUE,
