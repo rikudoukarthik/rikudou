@@ -1,6 +1,6 @@
 ---
 title: Karthik Thrikkadeeri
-subtitle: "Research Assistant @NCF India"
+subtitle: "Senior Research Assistant @NCF India"
 description: I am a researcher in ecology and my work revolves mostly around birds and their relationship with the environment. Beyond profession, birdwatching occupies a prominent role in my life and is much more than a hobby. I am also passionate about poetry. I am currently in the process of structuring a framework for my life comprised of these central interests of mine.
 images: 
   - img/DP_2022-08.jpg
