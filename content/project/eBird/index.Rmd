@@ -1,0 +1,160 @@
+---
+title: "Birding stats"
+date: "2023-05-11"
+draft: false
+subtitle: ""
+output: blogdown::html_page
+excerpt: An attempt to transfer my childhood obsession with sport statistics into the one sport I engage in nowadays.
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+
+library(tidyverse)
+library(here)
+library(glue)
+library(kableExtra)
+
+i_am("content/project/eBird/index.Rmd")
+
+cur_path <- "content/project/eBird/"
+
+
+knitr::opts_chunk$set(echo = FALSE, include=FALSE, warnings = FALSE, messages = FALSE)
+
+```
+
+Birding to me is a lot of things; at times, I see it as a sport. Given my love for numbers and my obsession with cricket stats as a kid (more on this coming soon!), I wanted to try and implement a similar sort of analysis and visualisation of sport statistics.
+
+**Disclaimer:** All this is based off my data uploaded to eBird. That covers most, but not all, of the birding I have done.
+
+# My career in numbers {#numbers}
+
+```{r}
+
+rawdata <- read.csv(here(glue("{cur_path}MyEBirdData.csv"))) %>% 
+  # removing unnecessary columns and renaming necessary ones
+  dplyr::select(-c(Scientific.Name, Area.Covered..ha., ML.Catalog.Numbers)) %>% 
+  # for uniformity with regular EBD
+  magrittr::set_colnames(c("SAMPLING.EVENT.IDENTIFIER", "COMMON.NAME", "TAXONOMIC.ORDER",
+                           "OBSERVATION.COUNT", "STATE.CODE", "COUNTY", 
+                           "LOCALITY.ID", "LOCALITY", "LATITUDE", "LONGITUDE", 
+                           "OBSERVATION.DATE", "TIME.OBSERVATION.STARTED", "PROTOCOL.TYPE",
+                           "DURATION.MINUTES", "ALL.OBS.REPORTED", "EFFORT.DISTANCE.KM",
+                           "NUMBER.OBSERVERS", "BREEDING.CODE", 
+                           "SPECIES.COMMENTS", "TRIP.COMMENTS"))
+
+# remove spuhs and slashes
+nonspec <- rawdata %>% 
+  filter(str_ends(COMMON.NAME, "sp.") |
+           str_detect(COMMON.NAME, "/")) %>% 
+  # ignoring slashes in true species
+  filter(!(COMMON.NAME %in% c("Long-tailed Shrike (tricolor/longicaudatus)",
+                              "Western Yellow Wagtail (flava/beema)"))) %>% 
+  distinct(COMMON.NAME)
+
+rawdata <- rawdata %>% anti_join(nonspec, by = "COMMON.NAME")
+
+tot_lists <- n_distinct(rawdata$SAMPLING.EVENT.IDENTIFIER)
+
+# 50s, 100s, average score
+stats0 <- rawdata %>% 
+  group_by(SAMPLING.EVENT.IDENTIFIER) %>% 
+  dplyr::summarise(NO.SP = n_distinct(COMMON.NAME)) %>% 
+  mutate(AVERAGE.SCORE = mean(NO.SP) %>% floor()) %>% 
+  filter(NO.SP >= 50) %>% 
+  mutate(`50s` = n_distinct(SAMPLING.EVENT.IDENTIFIER)) %>% 
+  filter(NO.SP >= 100) %>% 
+  dplyr::summarise(`50s` = min(`50s`),
+                   `100s` = n_distinct(SAMPLING.EVENT.IDENTIFIER),
+                   `Average score` = min(AVERAGE.SCORE)) %>% 
+  pivot_longer(everything(), names_to = "STATISTIC", values_to = "VALUE") %>% 
+  mutate(UNIT = c("-", "-", "spp."),
+         CHECKLIST = "-",
+         VALUE = glue("{VALUE}"))
+
+# all-time high score
+high_score <- rawdata %>% 
+  group_by(SAMPLING.EVENT.IDENTIFIER, DURATION.MINUTES, STATE.CODE) %>% 
+  dplyr::summarise(NO.SP = n_distinct(COMMON.NAME)) %>% 
+  ungroup() %>% 
+  filter(NO.SP == max(NO.SP)) %>% 
+  transmute(STATISTIC = "Highest score",
+            VALUE = glue("{NO.SP} ({DURATION.MINUTES}) in {STATE.CODE}"),
+            UNIT = "spp. (min)",
+            CHECKLIST = glue("https://ebird.org/checklist/{SAMPLING.EVENT.IDENTIFIER}"))
+
+# high score in 1 hour
+high_score_hour <- rawdata %>% 
+  filter(DURATION.MINUTES <= 60) %>% 
+  group_by(SAMPLING.EVENT.IDENTIFIER, DURATION.MINUTES, STATE.CODE) %>% 
+  dplyr::summarise(NO.SP = n_distinct(COMMON.NAME)) %>% 
+  ungroup() %>% 
+  filter(NO.SP == max(NO.SP)) %>% 
+  transmute(STATISTIC = "Highest score within 1 hour",
+            VALUE = glue("{NO.SP} ({DURATION.MINUTES}) in {STATE.CODE}"),
+            UNIT = "spp. (min)",
+            CHECKLIST = glue("https://ebird.org/checklist/{SAMPLING.EVENT.IDENTIFIER}"))
+
+# high and low speeds
+stats_speed <- rawdata %>% 
+  filter(ALL.OBS.REPORTED == 1,
+         # removing lists without duration info
+         !is.na(DURATION.MINUTES)) %>% 
+  group_by(SAMPLING.EVENT.IDENTIFIER) %>% 
+  dplyr::summarise(NO.SP = n_distinct(COMMON.NAME),
+                   DURATION.MINUTES = min(DURATION.MINUTES)) %>% 
+  mutate(SPEED = round((NO.SP/DURATION.MINUTES), 3), # species per hour
+         HIGH.SPEED = max(SPEED),
+         LOW.SPEED = min(SPEED)) %>% 
+  filter(SPEED == HIGH.SPEED | SPEED == LOW.SPEED) %>% 
+  # column saying high or low
+  mutate(STATISTIC = if_else(SPEED == HIGH.SPEED, 
+                             "Highest speed", 
+                             "Lowest speed")) %>% 
+  left_join(rawdata, by = c("SAMPLING.EVENT.IDENTIFIER", "DURATION.MINUTES")) %>% 
+  distinct(SPEED, STATISTIC, STATE.CODE, SAMPLING.EVENT.IDENTIFIER) %>% 
+  arrange(desc(SPEED)) %>% 
+  group_by(SPEED, STATISTIC) %>% 
+  reframe(CHECKLIST = glue("https://ebird.org/checklist/{SAMPLING.EVENT.IDENTIFIER}"),
+          VALUE = glue("{SPEED} ({SPEED*60}) in {STATE.CODE}")) %>% 
+  group_by(STATISTIC) %>% 
+  dplyr::summarise(VALUE = str_flatten_comma(VALUE),
+                   UNIT = "spp./min (spp./h)",
+                   CHECKLIST = str_flatten_comma(CHECKLIST))
+
+# combining all
+stats_all <- stats0 %>% 
+  bind_rows(high_score, high_score_hour, stats_speed)
+  
+# # to decide how wide cell should be
+# wrap_width_value <- str_split(stats_all$VALUE, ", ") %>% 
+#   map_dbl(~ str_length(.) %>% max()) %>% 
+#   max()
+# wrap_width_checklist <- str_split(stats_all$CHECKLIST, ", ") %>% 
+#   map_dbl(~ str_length(.) %>% max()) %>% 
+#   max()
+
+```
+
+```{r, include=TRUE}
+
+table_caption <- glue("My birding stats, as analysed from {tot_lists} checklists. This only includes non&ndash;zero-species checklists, and this directly impacts metrics such as lowest speed.")
+
+# tables of stats
+stats_all %>% 
+  mutate(across(everything(), ~ as.character(.))) %>% 
+  knitr::kable(caption = table_caption, booktabs = TRUE) %>%
+  # first column should be bold
+  column_spec(1, bold = TRUE, width_min = "9em") %>%
+  # adjusting cell widths
+  column_spec(2, width_min = "12em") %>%
+  column_spec(4, width_min = "19em")
+
+```
+
+
+# My career mapped {#map}
+
+Spatial visualisation of my eBirding in the style of an eBird profile, but as a bigger sandbox... **Coming soon!**

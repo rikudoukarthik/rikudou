@@ -13,3 +13,6 @@ Thumbs.db
 /resources/
 
 .hugo_build.lock
+
+# eBird data
+content/project/eBird/MyEBirdData.csv
