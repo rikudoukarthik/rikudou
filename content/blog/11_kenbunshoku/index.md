@@ -9,7 +9,6 @@ categories:
 - Notebooks
 - R
 tags:
-- change
 - growth
 - R
 - One Piece
@@ -59,14 +58,11 @@ In other words: first setting up the parallelisation, then iterating the functio
 <div style="text-align: center;">
 <figure>
     <img src="activate-adv-kenbunshoku.png" align="middle">
-    <figcaption>I asserted higher control over my Haki so that Future Vision only activated when required.</figcaption>
+    <figcaption>I gained better control over my Haki so that Future Vision only activated when required.</figcaption>
 </figure>
 </div>
 
 I only realised the full scope of this newfound ability when the range maps for all species in the country finished plotting---and it didn't take long. My naive estimate of 9.2 hours was absolutely decimated: all 942 maps were plotted in 19 minutes! I was initially just amused; later, I realised that the problem had now flipped and I now had to catch up with this future-walking and finish the rest of the code in time. Eventually, I was in a daze and felt like I had almost become mad with power!
-
-> I can see a bit into the future, too... I saw that I was going to beat you!
-> --- Monkey D. Luffy
 
 <div style="text-align: center;">
 <figure>
@@ -77,11 +73,14 @@ I only realised the full scope of this newfound ability when the range maps for 
 
 The strength of Haki varies from user to user. Katakuri's advanced Kenbunshoku was still stronger and more refined than Luffy's, of course. When I moved from testing the new plotting workflow on my laptop to running the full thing on our server, the difference became strikingly obvious. But luckily, the server was on my side, and I watched the progress bar tick and bathed in its glory. 
 
+> I can see a bit into the future, too... I saw that I was going to beat you!
+> --- Monkey D. Luffy
+
 This power-up made me feel reborn. My new ability to walk the future opens up so many possibilities, and I look forward to mastering it!
 
 <div style="text-align: center;">
 <figure>
-    <img src="featured_katakauri_v_luffy.jpg" align="middle">
+    <img src="featured.jpg" align="middle">
     <figcaption><a href="https://www.deviantart.com/mada654/art/Katakuri-Vs-Luffy-Snake-Man-765633030">Katakuri Vs Luffy / Snake Man</a>, by mada654 on DeviantArt.</figcaption>
 </figure>
 </div>
