@@ -7,7 +7,7 @@ cascade:
   sidebar:
     show_sidebar_adunit: true
     text_link_label: View all projects
-    text_link_url: /project/
+    text_link_url: /kartrix/
 title: Data & R!
 description: Fun ways to use various kinds of data and R.
 layout: list-grid

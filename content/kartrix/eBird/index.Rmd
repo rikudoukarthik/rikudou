@@ -16,9 +16,9 @@ library(here)
 library(glue)
 library(kableExtra)
 
-i_am("content/project/eBird/index.Rmd")
+i_am("content/kartrix/eBird/index.Rmd")
 
-cur_path <- "content/project/eBird/"
+cur_path <- "content/kartrix/eBird/"
 
 
 knitr::opts_chunk$set(echo = FALSE, include=FALSE, warnings = FALSE, messages = FALSE)

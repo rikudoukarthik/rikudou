@@ -15,4 +15,4 @@ Thumbs.db
 .hugo_build.lock
 
 # eBird data
-content/project/eBird/MyEBirdData.csv
+content/kartrix/eBird/MyEBirdData.csv

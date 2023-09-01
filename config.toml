@@ -126,7 +126,7 @@ enableEmoji = true
   [[menu.header]]
     name = "Data & R"
     title = "Data & R"
-    url = "/project/"
+    url = "/kartrix/"
     weight = 3
   [[menu.header]]
     name = "Talks"
