@@ -15,6 +15,7 @@ intro: |
  I consider myself to be a minimalist in all aspects of life. I constantly struggle with the way the world runs nowadays, and I lament how everyone consciously or otherwise madly chases after “more”. Highly old-fashioned in this regard, I often find myself wistful for the “good old days”---times before even mine, but familiar (and alluring) to me almost as legend---and pondering on how it all would be if things were to change. Lately, I have realised that a lot of the ideas I have or stumble upon invariably link back to this in one way or another.
 
  If you’re interested in seeing more of my other exploits online, do check out my profiles on [Goodreads](https://www.goodreads.com/user/show/7289090-karthik-thrikkadeeri), where I track and review books, and [eBird](https://ebird.org/profile/ODQxNTky/world), where I have all my birding data (which also contributes to science!).
+ 
 show_outro: true
 outro: |
   <i class="fas fa-glass-cheers pr2"></i>Thanks for visiting my page!

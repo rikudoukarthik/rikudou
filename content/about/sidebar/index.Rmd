@@ -7,7 +7,7 @@ show_social_links: true # specify social accounts in site config
 audio_link_label: "How to say my name" # leave blank to exclude
 link_list_label: "Links" # bookmarks, elsewhere, etc.
 link_list:
-- name: CV (Sep 2023)
+- name: CV (`r format(Sys.time(), "%b %Y")`)
   url: "/docs/CV_K-Thrikkadeeri_202309.pdf"
 ---
 
