@@ -161,7 +161,7 @@ get_overall_stats() %>%
 
 ```{r, include=TRUE}
 
-table_caption <- glue("Leaderboard of own vehicles I have driven, based on total distance driven. Ranking priority is higher for logged distance than for total, owing to the uncertainty associated with approximation.")
+table_caption <- glue("Leaderboard of own vehicles I have driven, based on total distance driven (km). Ranking priority is higher for logged distance than for total, owing to the uncertainty associated with approximation.")
 
 map(unique(data_veh$VEHICLE),
     ~ get_tot_dist(.x) %>% bind_cols(tibble(VEHICLE = .x))) %>% 
@@ -188,7 +188,7 @@ map(unique(data_veh$VEHICLE),
 
 {{< panel name="Graphical vehicle log" >}}
 
-```{r, dev.args=list(bg = "transparent"), include=TRUE, warning=FALSE}
+```{r, fig.cap="Graph showing the driving I logged in each vehicle over time. Each point is a fuelling event, when the date, odometer reading, fuel quantity and fuel amount would be logged. Note that Micra does not start from zero, due to the considerable unlogged driving I did in it prior to 2021.", dev.args=list(bg = "transparent"), include=TRUE, warning=FALSE}
 data_veh %>% 
   filter(DRIVER == "Self") %>% 
   ggplot(aes(x = DATE, y = ODO.ME.CUM, colour = VEHICLE)) +
@@ -231,7 +231,7 @@ This was during my undergraduate years, and I did a whole lot of exploration and
 
 **Total distance driven**: `r get_tot_dist("Gixxer Rogue") %>% pull(TOT.DIST)` km
 
-**Last odometer reading**: `r data_veh %>% filter(VEHICLE == "Gixxer Rogue", !is.na(ODO)) %>% reframe(ODO = max(ODO)) %>% pull(ODO)` km
+**Last odometer reading**: `r data_veh %>% filter(VEHICLE == "Gixxer Rogue", !is.na(ODO)) %>% reframe(ODO = max(ODO)) %>% pull(ODO)` km (when sold)
 
 ## Nissan Micra {#micra}
 

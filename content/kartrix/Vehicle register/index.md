@@ -59,7 +59,7 @@ Much more recently, I have been fortunate enough to actually drive/ride a fair b
 {{< panel name="Vehicle leaderboard" >}}
 
 <table>
-<caption>Table 2: Leaderboard of own vehicles I have driven, based on total distance driven. Ranking priority is higher for logged distance than for total, owing to the uncertainty associated with approximation.</caption>
+<caption>Table 2: Leaderboard of own vehicles I have driven, based on total distance driven (km). Ranking priority is higher for logged distance than for total, owing to the uncertainty associated with approximation.</caption>
  <thead>
   <tr>
    <th style="text-align:right;"> Rank </th>
@@ -99,7 +99,10 @@ Much more recently, I have been fortunate enough to actually drive/ride a fair b
 
 {{< panel name="Graphical vehicle log" >}}
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-1.png" width="672" />
+<div class="figure">
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-1.png" alt="Graph showing the driving I logged in each vehicle over time. Each point is a fuelling event, when the date, odometer reading, fuel quantity and fuel amount would be logged. Note that Micra does not start from zero, due to the considerable unlogged driving I did in it prior to 2021." width="672" />
+<p class="caption">Figure 1: Graph showing the driving I logged in each vehicle over time. Each point is a fuelling event, when the date, odometer reading, fuel quantity and fuel amount would be logged. Note that Micra does not start from zero, due to the considerable unlogged driving I did in it prior to 2021.</p>
+</div>
 
 {{< /panel >}}
 
@@ -121,7 +124,7 @@ This was during my undergraduate years, and I did a whole lot of exploration and
 
 **Total distance driven**: 20,772 km
 
-**Last odometer reading**: 20,776 km
+**Last odometer reading**: 20,776 km (when sold)
 
 ## Nissan Micra {#micra}
 
