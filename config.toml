@@ -133,6 +133,11 @@ enableEmoji = true
     title = "Talks"
     url = "/talk/"
     weight = 4
+  [[menu.header]]
+    name = "Publications"
+    title = "Publications"
+    url = "/pubs/"
+    weight = 5
 
   # Configure footer  
   [[menu.footer]]
