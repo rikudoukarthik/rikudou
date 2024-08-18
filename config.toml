@@ -41,7 +41,7 @@ enableEmoji = true
   socialInFooter = true
   # Default image for social sharing and search engines. 
   # Place image file in `static` folder and specify image name here.
-  sharing_image = "/img/papillons.jpg"
+  sharing_image = "/img/ai.png"
   # Twitter username (without @). Used when a visitor shares your site on Twitter.
   twitter = "TrickDEerie"
   
@@ -67,7 +67,7 @@ enableEmoji = true
   # Configuration of https://utteranc.es/ for comments
   [params.utterances]
     use_utterances = true
-    repo_name = "apreshill/apero"
+    repo_name = "rikudoukarthik/rikudou"
     issue_term = "pathname" # url, pathname, or title
     theme = "boxy-light"
     label = "comments :crystal_ball:"
@@ -141,7 +141,7 @@ enableEmoji = true
 
   # Configure footer  
   [[menu.footer]]
-    name = "Made with 💙"
+    name = "About this site"
     title = "Made with Hugo Apéro and blogdown"
     url = "/colophon/"
     weight = 1
