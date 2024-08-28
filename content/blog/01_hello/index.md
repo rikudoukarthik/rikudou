@@ -39,4 +39,4 @@ I am currently a “lost” soul, but I accept that with open arms. I have latel
 
 That’s enough context for now. Until next time.
 
-![Cool photo](featured.jpg)
+![Cool photo](featured.JPG)
