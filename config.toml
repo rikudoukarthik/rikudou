@@ -1,4 +1,4 @@
-baseURL = "https://thepageofsixpaths.netlify.app/"
+baseURL = "https://kartrick.rbind.io/"
 theme = "hugo-apero"
 languageCode = "en"
 title = "Karthik Thrikkadeeri"
@@ -9,7 +9,7 @@ disqusShortname = "" # see params.utterances to use utterances instead of Disqus
 metaDataFormat = "yaml"
 footnoteReturnLinkContents = "&#8617;" # ↩
 # set deliberately low for testing choose your preffered number based on the blog layout you've chosen
-paginate = 6
+paginate = 10
 preserveTaxonomyNames = true
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
 enableEmoji = true
@@ -41,7 +41,7 @@ enableEmoji = true
   socialInFooter = true
   # Default image for social sharing and search engines. 
   # Place image file in `static` folder and specify image name here.
-  sharing_image = "/img/papillons.jpg"
+  sharing_image = "/img/ai.png"
   # Twitter username (without @). Used when a visitor shares your site on Twitter.
   twitter = "TrickDEerie"
   
@@ -62,16 +62,12 @@ enableEmoji = true
   # sans-serif options: Commissioner / Atkinson Hyperlegible / Metropolis
   # if you import your own fonts, name them here too
   customheadingFontFamily = "Petrona"
-  customtextFontFamily = "EB Garamond"
-  # alternatively, leave empty and select basic font options: sans-serif or serif
-  # for more http://tachyons.io/docs/typography/font-family/
-  textFontFamily = "sans-serif"
-  headingFontFamily = "sans-serif"
+  customtextFontFamily = "Vollkorn"
 
   # Configuration of https://utteranc.es/ for comments
   [params.utterances]
     use_utterances = true
-    repo_name = "apreshill/apero"
+    repo_name = "rikudoukarthik/rikudou"
     issue_term = "pathname" # url, pathname, or title
     theme = "boxy-light"
     label = "comments :crystal_ball:"
@@ -86,25 +82,29 @@ enableEmoji = true
   # Icon pack "fas" includes solid icons, see: https://fontawesome.com/icons?d=gallery&s=solid&m=free
   # Icon pack "far" includes regular icons, see: https://fontawesome.com/icons?d=gallery&s=regular&m=free
   [[params.social]]
-      icon      = "github" # icon name without the 'fa-'
-      icon_pack = "fab"
-      url       = "https://github.com/rikudoukarthik/"
+      icon      = "google-scholar" # icon name without the 'fa-'
+      icon_pack = "ai"
+      url       = "https://scholar.google.co.in/citations?user=rGqtkNgAAAAJ&hl=en"
   [[params.social]]
       icon      = "orcid" # icon name without the 'fa-'
       icon_pack = "ai"
       url       = "https://orcid.org/0000-0003-2863-5879"
   [[params.social]]
-      icon      = "instagram" # icon name without the 'fa-'
+      icon      = "github" # icon name without the 'fa-'
       icon_pack = "fab"
-      url       = "https://www.instagram.com/rikudoukarthik/"
+      url       = "https://github.com/rikudoukarthik/"
+  [[params.social]]
+      icon      = "stackoverflow" # icon name without the 'fa-'
+      icon_pack = "ai"
+      url       = "https://stackoverflow.com/users/13000254/karthik-thrikkadeeri"
+  [[params.social]]
+      icon      = "inaturalist" # icon name without the 'fa-'
+      icon_pack = "ai"
+      url       = "https://www.inaturalist.org/people/337978"
   [[params.social]]
       icon      = "twitter" # icon name without the 'fa-'
       icon_pack = "fab"
       url       = "https://twitter.com/TrickDEerie"
-  [[params.social]]
-      icon      = "rss" # icon name without the 'fa-'
-      icon_pack = "fas"
-      url       = "/blog/index.xml"
 
 [taxonomies]
   category = "categories"
@@ -126,7 +126,7 @@ enableEmoji = true
   [[menu.header]]
     name = "Data & R"
     title = "Data & R"
-    url = "/project/"
+    url = "/kartrix/"
     weight = 3
   [[menu.header]]
     name = "Talks"
@@ -134,21 +134,16 @@ enableEmoji = true
     url = "/talk/"
     weight = 4
   [[menu.header]]
-    name = "A collection"
-    title = "A collection"
-    url = "/collection/"
+    name = "Publications"
+    title = "Publications"
+    url = "/pubs/"
     weight = 5
-  [[menu.header]]
-    name = "Elements"
-    title = "Element Page"
-    url = "/elements/"
-    weight = 6
-    
+
   # Configure footer  
   [[menu.footer]]
-    name = "License"
-    title = "License"
-    url = "/license/"
+    name = "About this site"
+    title = "Made with Hugo Apéro and blogdown"
+    url = "/colophon/"
     weight = 1
   [[menu.footer]]
     name = "Contact"
@@ -156,9 +151,9 @@ enableEmoji = true
     url = "/contact/"
     weight = 2
   [[menu.footer]]
-    name = "Contributors"
-    title = "Contributors"
-    url = "/contributors/"
+    name = "RSS"
+    title = "Site RSS Feed"
+    url = "/blog/index.xml"
     weight = 3
 
 # see https://gohugo.io/about/hugo-and-gdpr/    
@@ -183,3 +178,4 @@ enableEmoji = true
   [privacy.youtube]
     disable = false
     privacyEnhanced = true
+    

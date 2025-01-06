@@ -56,7 +56,7 @@ $font-path: '{{ "fonts" | relURL }}';
 // apply tachyons font family and color options from config
 body {
   @extend .bg-#{$siteBgColor}, .#{$textFontFamily}, .#{$textColor};
-}
+  }
 h1, h2, h3, h4, h5, h6 {
   @extend .#{$headingFontFamily}, .#{$headingColor};
 }
@@ -102,17 +102,21 @@ h1, h2, h3, h4, h5, h6 {
   h5 { @extend .f5 ; }
   h6 { @extend .f6 ; }
 
-  > p { @extend .lh-copy ; }
+  > p { @extend .lh-copy ;   font-size: 1.2em;}
 
   > p > code {
     @extend .f6, .ph1, .bg-white-50 ;
   }
 
+  // change blockquote style
   blockquote {
     @extend .ml0, .pl3, .bl, .bw2, .measure-wide, .b--#{$borderColor} ;
 
     p, cite { @extend .lh-copy ; }
-    cite { @extend .f6, .i ; }
+    cite { @extend .f6, .i ; };
+    
+    font-style: italic;
+    font-size: 1.2em;
   }
 
   ul:not(.panel-tabs), ol, dl { @extend .measure-wide, .lh-copy ; }
@@ -125,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
 
     tbody tr { @extend .stripe-dark ; }
     th { @extend .pa3, .f7, .fw7, .ttu, .tl, .v-btm ; }
-    td { @extend .pa3, .f6, .v-top ; }
+    td { @extend .pa3, .f6, .v-top ; };
   }
 
   > .footnotes {
@@ -147,7 +151,8 @@ h1, h2, h3, h4, h5, h6 {
 .list-sidebar {
   article:first-of-type {
     @extend .mt4-l ;
-  }
+  };
+    font-size: 1.2em;
 }
 
 // make the ad unit sticky and pad details
@@ -159,7 +164,8 @@ h1, h2, h3, h4, h5, h6 {
   }
   details {
     @extend .ph4, .mv4 ;
-  }
+  };
+  
 }
 
 // SHORTCODES
@@ -410,6 +416,7 @@ details#PageTableOfContents {
 .about-sidebar {
   @extend .self-start, .sticky, .bg-#{$sidebarBgColor}, .#{$sidebarTextColor};
   height: 100vh;
+  
 }
 .about-sidebar a:not(.link) {
   @extend .#{$sidebarLinkColor};
@@ -490,6 +497,7 @@ nav#SeriesTableOfContents ul li {
 nav#SectionTableOfContents ul details {
   @extend .pv1, .mv0, .pr0;
   padding-left: 1.25rem;
+  
   &.active {
     @extend .b--#{$borderColor}, .bl, .bw1, .pl3;
   }

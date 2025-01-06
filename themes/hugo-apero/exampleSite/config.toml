@@ -134,7 +134,7 @@ enableEmoji = true
   [[menu.header]]
     name = "Projects"
     title = "Project Portfolio"
-    url = "/project/"
+    url = "/kartrix/"
     weight = 3
   [[menu.header]]
     name = "Talks"

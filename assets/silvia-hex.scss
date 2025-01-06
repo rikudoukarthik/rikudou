@@ -14,8 +14,8 @@ $spc-bg: #fffbf2; // formerly #F5F5F5, #fffcf7, fffbf5
 $spc-bg-dark: #FAF0E3; // formerly #EBEBEB, #FBEBDA, FAF0E3, WIP FFF2EB 
 $spc-primary: #002642; // formerly #122140, 1C304A, 002642
 $spc-primary-light: #2E4963 ; // formerly #475269, 32415A, 2E4963
-$spc-secondary: #A23E02; // formerly #936C10, 815E0E, b04303
-$spc-secondary-light: #936c10;
+$spc-secondary: #94240D; // formerly #936C10, 815E0E, b04303
+$spc-secondary-light: #94480D;
 
 // other highlight options
 // terra: A44200*
@@ -40,7 +40,7 @@ $buttonTextColorCustom: $white;                // contact form button
 $buttonHoverBgColorCustom: mix($spc-secondary, $white, 85); // any button background w/ hover
 $buttonHoverTextColorCustom: $white;           // any button text w/ hover
 
-$borderColorCustom: $spc-primary-light;        // quote bar, horizontal bars
+$borderColorCustom: $spc-secondary-light;        // quote bar, horizontal bars
 
 // syntax highlighting
 // generated using hugo gen chromastyles --style=arduino > assets/css/arduino.css then modified
@@ -140,4 +140,5 @@ $borderColorCustom: $spc-primary-light;        // quote bar, horizontal bars
 /* GenericSubheading */ .chroma .gu {  }
 /* GenericTraceback */ .chroma .gt {  }
 /* GenericUnderline */ .chroma .gl {  }
+
 /* TextWhitespace */ .chroma .w {  }

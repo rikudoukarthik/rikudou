@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $page_toc_label := .Params.sidebar.text_contents_label | default "On this page" }}
 <main class="page-main pa4" role="main">
   <section class="page-content mw7 center">
     <article class="post-content pa0 pr3-l">
@@ -23,6 +24,12 @@
 <aside class="page-sidebar" role="complementary">
   {{ partial "shared/sidebar-scaffold.html" . }}
   {{ .Scratch.Set "details" "open" }}
+    <details open id="PageTableOfContents">
+      <summary><h2 class="mv0 f5 fw7 ttu tracked dib">{{ $page_toc_label }}</h2></summary>
+      <div class="pl2 pr0 mh0">
+        {{ .TableOfContents }}
+      </div>
+    </details>
   {{ partial "shared/post-details.html" . }}
 </aside>
 {{ end }}

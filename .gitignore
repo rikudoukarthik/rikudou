@@ -5,3 +5,14 @@
 
 *.RData
 *.Rproj
+
+.DS_Store
+Thumbs.db
+
+/public/
+/resources/
+
+.hugo_build.lock
+
+# eBird data
+content/kartrix/eBird/MyEBirdData.csv
