@@ -8,7 +8,7 @@ cascade:
     show_sidebar_adunit: true
     text_link_label: View all projects
     text_link_url: /kartrix/
-title: Data & R!
+title: Data Works
 description: Fun ways to use various kinds of data and R.
 layout: list-grid
 show_author_byline: false

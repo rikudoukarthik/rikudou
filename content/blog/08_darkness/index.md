@@ -4,6 +4,7 @@ draft: false
 excerpt: 
 layout: single
 title: Darkness
+slug: darkness
 subtitle: 
 categories:
 - Notebooks

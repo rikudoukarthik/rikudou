@@ -1,7 +1,7 @@
 ---
 ## Configure sidebar content in narrow column
 author: "Karthik Thrikkadeeri"
-role: "Senior Research Assistant, NCF India"
+role: "PhD Student @ Louisiana State University"
 avatar_shape: rounded # circle, square, rounded, leave blank to exclude
 show_social_links: true # specify social accounts in site config
 audio_link_label: "How to say my name" # leave blank to exclude

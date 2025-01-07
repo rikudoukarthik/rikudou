@@ -22,9 +22,7 @@ It's been close to two years now since I last posted on my blog. Naturally, a lo
 
 First of all, more than 11 years after I first registered with WordPress, I have decided to move on. This decision had been made quite some time ago, as I became increasingly fascinated with [Markdown](https://en.wikipedia.org/wiki/Markdown), and parallelly with [R](https://en.wikipedia.org/wiki/R_(programming_language)). My first leap into the world of RMarkdown was [creating my CV](https://github.com/rikudoukarthik/vitae/blob/main/CV.Rmd), whereas more recently I use it to make most of [my slide decks](https://kartrick.rbind.io/talk/) as well. 
 
-```{r xaringan, echo=FALSE}
-knitr::include_url("https://slides.yihui.org/xaringan/#41")
-```
+<iframe src="https://slides.yihui.org/xaringan/#41" width="672" height="400px" data-external="1"></iframe>
 
 Migrating an entire blog, albeit with very few posts, wound up being quite the task---if you're at all familiar with anything R, lRning curves are steep! Long story short, it took me a while to learn how website-building using RMarkdown works, and to migrate all my blog posts here while also adding more elements to turn the erstwhile blog into a website.
 

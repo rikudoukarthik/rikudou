@@ -4,6 +4,7 @@ draft: false
 excerpt: In keeping with my aim of getting back to unserious and light-hearted blogging, I detail a recent intriguing dream.
 layout: single
 title: adidab
+slug: adidab
 subtitle: 
 categories:
 - Notebooks

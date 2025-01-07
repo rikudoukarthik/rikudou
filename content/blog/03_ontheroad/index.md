@@ -4,9 +4,10 @@ draft: false
 excerpt: 
 layout: single
 title: On the road
+slug: on-the-road
 subtitle: 
 categories:
-- Helmet-clad
+- The Road
 tags:
 - at home
 - beauty

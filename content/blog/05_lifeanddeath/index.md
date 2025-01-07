@@ -4,6 +4,7 @@ draft: false
 excerpt: 
 layout: single
 title: Of life and death
+slug: of-life-and-death
 subtitle: 
 categories:
 - Notebooks

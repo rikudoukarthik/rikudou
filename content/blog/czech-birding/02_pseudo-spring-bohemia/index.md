@@ -1,5 +1,6 @@
 ---
 title: "Pseudo-spring birding in Bohemia"
+slug: pseudo-spring-birding-bohemia
 date: "2021-05-14"
 draft: false
 subtitle: ""

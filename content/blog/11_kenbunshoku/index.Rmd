@@ -4,10 +4,11 @@ draft: false
 excerpt: I awakened my advanced Kenbunshoku Haki in the heat of a trying battle. I can now plan futures and walk out my desires across them.
 layout: single
 title: Walking the future with advanced Kenbunshoku Haki
+slug: kenbunshoku-haki
 subtitle: 
 categories:
 - Notebooks
-- R
+- R Glory
 tags:
 - growth
 - R

@@ -4,6 +4,7 @@ draft: false
 excerpt: Hello! What am I and why do I have this blog?
 layout: single
 title: Hello!
+slug: hello
 subtitle: 
 categories:
 - Notebooks

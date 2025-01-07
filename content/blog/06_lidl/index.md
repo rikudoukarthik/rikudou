@@ -4,9 +4,11 @@ draft: false
 excerpt: 
 layout: single
 title: A Lidl signboard
+slug: a-lidl-signboard
 subtitle: 
 categories:
 - Notebooks
+- Numbers
 tags:
 - budweis
 - ceske budejovice

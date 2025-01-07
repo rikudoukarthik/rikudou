@@ -4,9 +4,11 @@ draft: false
 excerpt: An update in my love story with *Locustella* warblers!
 layout: single
 title: Birding and the element of surprise
+slug: locustella-love-update
 subtitle: 
 categories:
 - Papers
+- Birding
 tags:
 - birds
 - birding

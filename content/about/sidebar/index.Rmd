@@ -1,13 +1,13 @@
 ---
 ## Configure sidebar content in narrow column
 author: "Karthik Thrikkadeeri"
-role: "Senior Research Assistant, NCF India"
+role: "PhD Student @ Louisiana State University"
 avatar_shape: rounded # circle, square, rounded, leave blank to exclude
 show_social_links: true # specify social accounts in site config
 audio_link_label: "How to say my name" # leave blank to exclude
 link_list_label: "Links" # bookmarks, elsewhere, etc.
 link_list:
-- name: CV (`r format(Sys.time(), "%b %Y")`)
+- name: CV (`r format(lubridate::ym(max(as.numeric(stringr::str_remove_all(stringr::str_remove_all(list.files("../../../static/docs/", pattern = "CV_"), "CV_K-Thrikkadeeri_"), ".pdf")))), "%b %Y")`)
   url: "/docs/CV_K-Thrikkadeeri_202312.pdf"
 ---
 

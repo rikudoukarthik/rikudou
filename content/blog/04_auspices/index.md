@@ -4,9 +4,10 @@ draft: false
 excerpt: 
 layout: single
 title: Under the auspices of birds
+slug: under-the-auspices-of-birds
 subtitle: 
 categories:
-- Playing with Names
+- Words
 tags:
 - auspice
 - birds

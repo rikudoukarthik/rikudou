@@ -3,6 +3,7 @@ date: "2021-01-05"
 draft: false
 excerpt: 
 title: At the turn of the year…
+slug: at-the-turn-of-the-year
 subtitle: 
 layout: single-sidebar
 categories:
@@ -27,7 +28,7 @@ tags:
 
 So. 2020 was a curious year. For me personally, it was a trial in many ways. An opportunity for deep learning and growth. Well, I suppose any year is, but 2020 was particularly so. And no, it is not due only to the pandemic. Even the content and style of this blog is going to change, so I thought it worthwhile to write up this post. It was a long (but short!) year and this is a long post, and since I am aware that not all of my vast readership might be interested in all the same things, I have graciously provided you the liberty of jumping ahead using the section headings in the sidebar.
 
-# The Trial of 2020
+## The Trial of 2020
 
 I started off 2020 as a master’s student of ecology barely one semester into the programme. I had arrived in the Czech Republic for the master’s considering my time here almost as a [timeskip](https://tropedia.fandom.com/wiki/Time_Skip) separating two chapters of my life, and was determined to not go back home until the end of the two years. I even romanticised it (still do) and alluded to it in a poem. My first semester was enjoyable, with an assortment of Erasmus exchange students all here for the ecology programme. Needless to say, the first semester also saw a high degree of indulgence from my part, getting a taste of the “party culture” in the country of beer. However, the culture soon grew distasteful to me, and I got bored of it. So, the start of 2020 saw me leaning towards subtle reclusion, before the pandemic-enforced isolation.
 
@@ -45,7 +46,7 @@ Looking at the year more broadly, however, the most important change (and the on
 
 To summarise, 2020 was a successful and enlightening year for me from the personal growth perspective. It has transitioned quite smoothly into 2021, where I hope to continue the positive trend. Now to move past this boring personal talk, let’s go to a general summary of my 2020!
 
-# The Year of 2020
+## The Year of 2020
 
 January of 2020 saw most of the Erasmus friends I’d made in the first semester return to their respective home countries, on completing the semester. This wasn’t necessarily sad, because I was looking forward to meeting new people in the subsequent semesters. Oh boy, we all know how that went. I finished all the semester examinations and had sort of settled in to my life here. I had declined a friend’s suggestion/offer to visit Prague during Christmas as I was uninterested in the “holiday shopping”, and capital cities during holidays are seldom attractive. But by now, I was eager to start exploring places. Winter was a letdown, our town České Budějovice receiving hardly any snow throughout.
 
@@ -83,7 +84,7 @@ As I finish writing this I realise that I seem to have conveniently left out som
 
 That, very roughly, is how my 2020 went. It’s hard condensing a whole year’s worth of events into a few paragraphs, and I feel like I’ve skipped over half the things. Overall though, I can’t complain. My 2020 had a decently-sized bright side to it, especially the birding:
 
-# Birding in 2020
+## Birding in 2020
 
 2020 was a great year for me when it comes to birding. Although I had started birding in 2017 and I’d always enjoy identifying birds wherever I went, I’d never fully made it a part of my life. My friends and I would go on birding outings on weekends few and far in between and otherwise make the occasional bird list. That was it. But this year changed all of that.
 

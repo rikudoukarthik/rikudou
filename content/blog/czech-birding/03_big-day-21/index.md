@@ -1,5 +1,6 @@
 ---
 title: "Global Big Day 2021"
+slug: global-big-day-2021
 date: "2021-05-15"
 draft: false
 subtitle: ""

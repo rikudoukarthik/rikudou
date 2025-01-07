@@ -124,8 +124,8 @@ enableEmoji = true
     url = "/blog/"
     weight = 2
   [[menu.header]]
-    name = "Data & R"
-    title = "Data & R"
+    name = "Data Works"
+    title = "Data Works"
     url = "/kartrix/"
     weight = 3
   [[menu.header]]

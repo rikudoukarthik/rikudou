@@ -4,6 +4,7 @@ draft: false
 excerpt: 
 layout: single
 title: 3.35 to Budějce
+slug: 335-to-budejce
 subtitle: 
 categories:
 - Notebooks
