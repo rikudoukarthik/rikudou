@@ -20,7 +20,7 @@ tags:
 - Indian BIRDS
 ---
 
-Having started birding in India, it was Europe that made me [fall in love with warblers](https://kartrick.rbind.io/blog/07_turnofyear/#birding-in-2020). Among them, those of the genus *Locustella* particularly took my heart, due to their mesmerising songs that so perfectly emulated orthopterans. There were three species I ran into during my time in Europe, all with surprisingly distinct songs.
+Having started birding in India, it was Europe that made me [fall in love with warblers](https://kartrick.rbind.io/blog/turn-of-year/#birding-in-2020). Among them, those of the genus *Locustella* particularly took my heart, due to their mesmerising songs that so perfectly emulated orthopterans. There were three species I ran into during my time in Europe, all with surprisingly distinct songs.
 
 <iframe src="https://macaulaylibrary.org/asset/229576271/embed" height="432" width="640" frameborder="0" allowfullscreen></iframe>
 <iframe src="https://macaulaylibrary.org/asset/243291031/embed" height="432" width="640" frameborder="0" allowfullscreen></iframe>

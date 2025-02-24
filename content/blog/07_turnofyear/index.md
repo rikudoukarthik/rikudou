@@ -3,7 +3,7 @@ date: "2021-01-05"
 draft: false
 excerpt: 
 title: At the turn of the year…
-slug: at-the-turn-of-the-year
+slug: turn-of-year
 subtitle: 
 layout: single-sidebar
 categories:

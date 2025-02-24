@@ -16,7 +16,7 @@ tags:
 - Markdown
 ---
 
-[Hello](https://kartrick.rbind.io/blog/01_hello/) again!
+[Hello](https://kartrick.rbind.io/blog/hello/) again!
 
 It's been close to two years now since I last posted on my blog. Naturally, a lot has changed.
 
