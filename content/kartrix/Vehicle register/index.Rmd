@@ -1,6 +1,6 @@
 ---
 title: "Vehicle register"
-date: "2024-03-31"
+date: "`r lubridate::today()`"
 draft: false
 subtitle: ""
 output: blogdown::html_page
@@ -48,7 +48,7 @@ our_gsheet <- "https://docs.google.com/spreadsheets/d/1k0FHMT1oXLmtmmBdhgp3NXxKZ
 data_veh <- read_sheet(our_gsheet, 1) %>% 
   mutate(Date = as_date(Date)) %>% 
   magrittr::set_colnames(c("VEHICLE", "DATE", "FUEL.PRICE", "FUEL.QUANT", 
-                           "ODO", "COMMENTS", "DRIVER"))
+                           "ODO", "DRIVER", "COMMENTS"))
 
 unlogged <- read_sheet(our_gsheet, "Unlogged") %>% 
   magrittr::set_colnames(c("VEHICLE", "DATE", "DISTANCE", "COMMENTS")) %>% 

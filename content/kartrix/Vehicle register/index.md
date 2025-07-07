@@ -1,6 +1,6 @@
 ---
 title: "Vehicle register"
-date: "2024-03-31"
+date: "2025-07-06"
 draft: false
 subtitle: ""
 output: blogdown::html_page
@@ -23,7 +23,7 @@ I have loved cars from the time I can remember, whether it was our family cars i
 
 Much more recently, I have been fortunate enough to actually drive/ride a fair bit myself. And, following my dad's advice, I made it a habit to maintain a fuel log for our own vehicles. I decided it would be fun to collate these datasets and explore some basic yet fun summaries. 
 
-***Note:*** *Page last updated on 2024-04-02, at which time vehicle logs were last updated on 2024-04-01.*
+***Note:*** *Page last updated on 2025-07-06, at which time vehicle logs were last updated on 2025-07-07.*
 
 ## Overall stats {.tabset}
 
@@ -34,7 +34,7 @@ Much more recently, I have been fortunate enough to actually drive/ride a fair b
 {{< panel name="Grand summary" >}}
 
 <table>
-<caption>Table 1: My overall driving stats, including exact figures from logged data and approximate figures of unlogged driving in both own and other vehicles.</caption>
+<caption><span id="tab:unnamed-chunk-1"></span>Table 1: (\#tab:unnamed-chunk-1)My overall driving stats, including exact figures from logged data and approximate figures of unlogged driving in both own and other vehicles.</caption>
  <thead>
   <tr>
    <th style="text-align:left;">  </th>
@@ -46,9 +46,9 @@ Much more recently, I have been fortunate enough to actually drive/ride a fair b
 <tbody>
   <tr>
    <td style="text-align:left;min-width: 15em; font-weight: bold;"> Distance driven (km) </td>
-   <td style="text-align:left;min-width: 6em; "> 41,047 </td>
+   <td style="text-align:left;min-width: 6em; "> 45,068 </td>
    <td style="text-align:left;min-width: 6em; "> 15,000 </td>
-   <td style="text-align:left;min-width: 6em; "> 56,047 </td>
+   <td style="text-align:left;min-width: 6em; "> 60,068 </td>
   </tr>
 </tbody>
 </table>
@@ -59,7 +59,7 @@ Much more recently, I have been fortunate enough to actually drive/ride a fair b
 {{< panel name="Vehicle leaderboard" >}}
 
 <table>
-<caption>Table 2: Leaderboard of own vehicles I have driven, based on total distance driven (km). Ranking priority is higher for logged distance than for total, owing to the uncertainty associated with approximation.</caption>
+<caption><span id="tab:unnamed-chunk-2"></span>Table 3: (\#tab:unnamed-chunk-2)Leaderboard of own vehicles I have driven, based on total distance driven (km). Ranking priority is higher for logged distance than for total, owing to the uncertainty associated with approximation.</caption>
  <thead>
   <tr>
    <th style="text-align:right;"> Rank </th>
@@ -80,9 +80,9 @@ Much more recently, I have been fortunate enough to actually drive/ride a fair b
   <tr>
    <td style="text-align:right;min-width: 6em; "> 2 </td>
    <td style="text-align:left;min-width: 12em; "> Micra </td>
-   <td style="text-align:left;min-width: 6em; "> 16,411 </td>
+   <td style="text-align:left;min-width: 6em; "> 20,432 </td>
    <td style="text-align:left;min-width: 6em; "> 10,000 </td>
-   <td style="text-align:left;min-width: 6em; "> 26,411 </td>
+   <td style="text-align:left;min-width: 6em; "> 30,432 </td>
   </tr>
   <tr>
    <td style="text-align:right;min-width: 6em; "> 3 </td>
@@ -101,7 +101,7 @@ Much more recently, I have been fortunate enough to actually drive/ride a fair b
 
 <div class="figure">
 <img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-1.png" alt="Graph showing the driving I logged in each vehicle over time. Each point is a fuelling event, when the date, odometer reading, fuel quantity and fuel amount would be logged. Note that Micra does not start from zero, due to the considerable unlogged driving I did in it prior to 2021." width="672" />
-<p class="caption">Figure 1: Graph showing the driving I logged in each vehicle over time. Each point is a fuelling event, when the date, odometer reading, fuel quantity and fuel amount would be logged. Note that Micra does not start from zero, due to the considerable unlogged driving I did in it prior to 2021.</p>
+<p class="caption"><span id="fig:unnamed-chunk-3"></span>Figure 1: Graph showing the driving I logged in each vehicle over time. Each point is a fuelling event, when the date, odometer reading, fuel quantity and fuel amount would be logged. Note that Micra does not start from zero, due to the considerable unlogged driving I did in it prior to 2021.</p>
 </div>
 
 {{< /panel >}}
@@ -136,9 +136,9 @@ The family car that we first got in 2015. It is unfortunately an automatic (CVT)
 
 **Delivery taken date**: 2015-04-??
 
-**Total distance driven**: 26,411 km
+**Total distance driven**: 30,432 km
 
-**Last odometer reading**: 76,854 km
+**Last odometer reading**: 87,840 km
 
 ## Suzuki Gixxer 150 aka 0002 {#0002}
 
