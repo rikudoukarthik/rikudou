@@ -1,4 +1,4 @@
-baseURL = "https://kartrick.rbind.io/"
+baseURL = "https://kartrick.com/"
 theme = "hugo-apero"
 languageCode = "en"
 title = "Karthik Thrikkadeeri"
