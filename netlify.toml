@@ -15,3 +15,9 @@ command = 'hugo -F -b $DEPLOY_PRIME_URL'
 [context.production]
 [context.production.environment]
 HUGO_ENV = 'production'
+
+[[redirects]]
+  from = "https://kartrick.rbind.io/*"
+  to = "https://kartrick.com/:splat"
+  status = 301
+  force = true
