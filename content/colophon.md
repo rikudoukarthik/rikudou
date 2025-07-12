@@ -7,7 +7,7 @@ header:
   caption: ""
   image: ""
 share: false
-title: "Made with 💙"
+title: "Made with 💛"
 ---
 
 ## Made with Hugo Apéro and blogdown
@@ -15,7 +15,7 @@ title: "Made with 💙"
 Made with <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/hugo-apero/" rel="dct:source">Hugo Apéro</a></span>, which is based on <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/formspree/blogophonic-hugo" rel="dct:source">Blogophonic</a></span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://formspree.io" property="cc:attributionName" rel="cc:attributionURL">Formspree</a>.
 Powered by [blogdown](https://pkgs.rstudio.com/blogdown/) and built by [Hugo](http://gohugo.io/).
 
-The source code for this blog can be found online <a href="https://github.com/rikudoukarthik/rikudou">here on GitHub <i class="fab fa-github"><span class="sr-only">GitHub</span></i></a>.
+The source code for this blog can be found online <a href="https://github.com/rikudoukarthik/website">here on GitHub <i class="fab fa-github"><span class="sr-only">GitHub</span></i></a>.
 
 ## License
 
