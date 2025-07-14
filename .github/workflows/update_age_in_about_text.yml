@@ -2,7 +2,7 @@ name: Update Age in About Page
 
 on:
   schedule:
-    - cron: '0 0 24 3 *' # Every July 12 at 2:00 UTC
+    - cron: '0 0 24 3 *' # Every 24 March at 00:00 UTC
   workflow_dispatch:
 
 jobs:
