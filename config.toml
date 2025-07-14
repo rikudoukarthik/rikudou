@@ -130,7 +130,7 @@ enableEmoji = true
     weight = 3
   [[menu.header]]
     name = "Slides"
-    title = "Slide Decks"
+    title = "Slide decks"
     url = "/slides/"
     weight = 4
   [[menu.header]]
