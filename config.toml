@@ -124,9 +124,9 @@ enableEmoji = true
     url = "/blog/"
     weight = 2
   [[menu.header]]
-    name = "Data Works"
-    title = "Data Works"
-    url = "/kartrix/"
+    name = "Sandbox"
+    title = "Sandbox"
+    url = "/sandbox/"
     weight = 3
   [[menu.header]]
     name = "Talks"

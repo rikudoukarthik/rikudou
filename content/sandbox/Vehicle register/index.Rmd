@@ -19,9 +19,9 @@ library(kableExtra)
 library(googlesheets4) # for G Sheets
 library(googledrive) # for G Sheets
 
-i_am("content/kartrix/Vehicle register/index.Rmd")
+i_am("content/sandbox/Vehicle register/index.Rmd")
 
-cur_path <- "content/kartrix/Vehicle register/"
+cur_path <- "content/sandbox/Vehicle register/"
 
 # source(glue("{cur_path}functions.R"))
 source("functions.R")
