@@ -139,7 +139,7 @@ enableEmoji = true
   [[menu.header]]
     name = "Talks"
     title = "Talks"
-    url = "/talk/"
+    url = "/slides/"
     weight = 4
   [[menu.header]]
     name = "A collection"

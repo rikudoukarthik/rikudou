@@ -34,4 +34,4 @@ show_post_time: false
 ---
 
 
-For more details, see an older but longer presentation of the same study [here](https://kartrick.com/talk/2022_ioc-covid-ebirding/).
+For more details, see an older but longer presentation of the same study [here](https://kartrick.com/slides/2022_ioc-covid-ebirding/).

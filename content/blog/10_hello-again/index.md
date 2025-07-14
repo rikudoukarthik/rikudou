@@ -20,7 +20,7 @@ tags:
 
 It's been close to two years now since I last posted on my blog. Naturally, a lot has changed.
 
-First of all, more than 11 years after I first registered with WordPress, I have decided to move on. This decision had been made quite some time ago, as I became increasingly fascinated with [Markdown](https://en.wikipedia.org/wiki/Markdown), and parallelly with [R](https://en.wikipedia.org/wiki/R_(programming_language)). My first leap into the world of RMarkdown was [creating my CV](https://github.com/rikudoukarthik/vitae/blob/main/CV.Rmd), whereas more recently I use it to make most of [my slide decks](https://kartrick.com/talk/) as well. 
+First of all, more than 11 years after I first registered with WordPress, I have decided to move on. This decision had been made quite some time ago, as I became increasingly fascinated with [Markdown](https://en.wikipedia.org/wiki/Markdown), and parallelly with [R](https://en.wikipedia.org/wiki/R_(programming_language)). My first leap into the world of RMarkdown was [creating my CV](https://github.com/rikudoukarthik/vitae/blob/main/CV.Rmd), whereas more recently I use it to make most of [my slide decks](https://kartrick.com/slides/) as well. 
 
 <iframe src="https://slides.yihui.org/xaringan/#41" width="672" height="400px" data-external="1"></iframe>
 

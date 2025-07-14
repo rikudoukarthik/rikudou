@@ -129,9 +129,9 @@ enableEmoji = true
     url = "/sandbox/"
     weight = 3
   [[menu.header]]
-    name = "Talks"
-    title = "Talks"
-    url = "/talk/"
+    name = "Slides"
+    title = "Slide Decks"
+    url = "/slides/"
     weight = 4
   [[menu.header]]
     name = "Publications"
