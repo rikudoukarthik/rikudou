@@ -13,5 +13,5 @@ This page contains the list of my academic publications, which can be grouped an
 
 <br>
 
-<script src="https://bibbase.org/show?bib=https%3A%2F%2Fbibbase.org%2Fzotero-mypublications%2Frikudoukarthik&jsonp=1&theme=dividers&authorFirst=1&nocache=1&sort=-date">
+<script src="https://bibbase.org/show?bib=https%3A%2F%2Fbibbase.org%2Fzotero-mypublications%2Frikudoukarthik&jsonp=1&theme=dividers&authorFirst=1&nocache=1&sort=-date&owner=thrikkadeeri">
 </script> 

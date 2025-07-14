@@ -9,9 +9,9 @@ This page contains the list of my academic publications, which can be grouped an
 *Hat-tip [Shankar Raman et al. (2024)](https://ecoevorxiv.org/repository/view/7268/) for detailing this method.*
 
 <!-- No need for this disclaimer since BibBase updates in real time. -->
-<!-- *Last updated on 2024-06-22.* -->
+<!-- *Last updated on 2025-07-14.* -->
 
 <br>
 
-<script src="https://bibbase.org/show?bib=https%3A%2F%2Fbibbase.org%2Fzotero-mypublications%2Frikudoukarthik&jsonp=1&theme=dividers&authorFirst=1&nocache=1&sort=-date">
+<script src="https://bibbase.org/show?bib=https%3A%2F%2Fbibbase.org%2Fzotero-mypublications%2Frikudoukarthik&jsonp=1&theme=dividers&authorFirst=1&nocache=1&sort=-date&owner=thrikkadeeri">
 </script> 
