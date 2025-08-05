@@ -25,7 +25,7 @@ links:
 - icon: images
   icon_pack: fas
   name: slides
-  url: https://kartrick.netlify.app/ga2024/
+  url: https://kartrix-doujutsu.netlify.app/ga2024/
 - icon: github
   icon_pack: fab
   name: code

@@ -25,7 +25,7 @@ links:
 - icon: images
   icon_pack: fas
   name: slides
-  url: https://kartrick.netlify.app/ioc-covid/
+  url: https://kartrix-doujutsu.netlify.app/ioc-covid/
 - icon: github
   icon_pack: fab
   name: code

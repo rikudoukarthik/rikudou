@@ -25,7 +25,7 @@ links:
 - icon: images
   icon_pack: fas
   name: slides
-  url: https://kartrick.netlify.app/ncf-am2022-covid/
+  url: https://kartrix-doujutsu.netlify.app/ncf-am2022-covid/
 - icon: github
   icon_pack: fab
   name: code
