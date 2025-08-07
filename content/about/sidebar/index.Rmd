@@ -8,7 +8,7 @@ audio_link_label: "How to say my name" # leave blank to exclude
 link_list_label: "Links" # bookmarks, elsewhere, etc.
 link_list:
 - name: CV (Aug 2025)
-  url: "/docs/CV_K-Thrikkadeeri_202312.pdf"
+  url: "/docs/CV_K-Thrikkadeeri_202508.pdf"
 ---
 
 ** index doesn't contain a body, just front matter above.

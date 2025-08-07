@@ -32,5 +32,8 @@ echo "Updating Rmd & md files..."
 # changing hyperlink text (CV (Mon YYYY))
 sed -E "s/CV \([A-Za-z]{3} [0-9]{4}\)/CV (${MONTH_NAME} ${YEAR})/" "$RMD_FILE" > "${RMD_FILE}.tmp" && mv "${RMD_FILE}.tmp" "$RMD_FILE"
 sed -E "s/CV \([A-Za-z]{3} [0-9]{4}\)/CV (${MONTH_NAME} ${YEAR})/" "$MD_FILE" > "${MD_FILE}.tmp" && mv "${MD_FILE}.tmp" "$MD_FILE"
+# changing filename call
+sed -E "s/${NAME_PREFIX}_[0-9]{6}\.pdf/${NEW_FILENAME}/" "$RMD_FILE" > "${RMD_FILE}.tmp" && mv "${RMD_FILE}.tmp" "$RMD_FILE"
+sed -E "s/${NAME_PREFIX}_[0-9]{6}\.pdf/${NEW_FILENAME}/" "$MD_FILE" > "${MD_FILE}.tmp" && mv "${MD_FILE}.tmp" "$MD_FILE"
 
 echo "Done! New CV: $NEW_FILENAME"
