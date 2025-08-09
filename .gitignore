@@ -15,6 +15,7 @@ Thumbs.db
 .hugo_build.lock
 
 # eBird data
-content/sandbox/eBird/MyEBirdData.csv
+ebird_*.zip
+MyEBirdData.csv
 
 /.quarto/

@@ -1,6 +1,6 @@
 ---
 title: "Birding stats"
-date: "2023-05-11"
+date: "`r format(Sys.Date(), format = '%Y-%m-%d')`"
 draft: false
 subtitle: ""
 output: blogdown::html_page
@@ -14,44 +14,47 @@ editor_options:
 library(tidyverse)
 library(here)
 library(glue)
-library(kableExtra)
-
-i_am("content/sandbox/eBird/index.Rmd")
-
-cur_path <- "content/sandbox/eBird/"
-
+library(reactable)
+library(skimmr)
 
 knitr::opts_chunk$set(echo = FALSE, include=FALSE, warnings = FALSE, messages = FALSE)
 
+cur_dir <- "content/sandbox/eBird/"
+
+# eBird data
+csv_name <- "MyEBirdData.csv"
+zip_file <- list.files(path = here("assets"), 
+                       pattern = "ebird_[0-9]*.zip", 
+                       full.names = FALSE)
+unzip(zipfile = here("assets", zip_file), 
+      files = csv_name, 
+      overwrite = TRUE,
+      exdir = here("assets"))
+data_file <- here("assets", csv_name)
+  
 ```
 
 Birding to me is a lot of things; at times, I see it as a sport. Given my love for numbers and my obsession with cricket stats as a kid (more on this coming soon!), I wanted to try and implement a similar sort of analysis and visualisation of sport statistics.
 
 **Disclaimer:** All this is based off my data uploaded to eBird. That covers most, but not all, of the birding I have done.
 
-# My career in numbers {#numbers}
+# Career in numbers {#numbers}
 
 ```{r}
 
-rawdata <- read.csv(here(glue("{cur_path}MyEBirdData.csv"))) %>% 
+rawdata <- skimmr::read.mydata(data_file, cols_style_ebd = TRUE) %>% 
   # removing unnecessary columns and renaming necessary ones
-  dplyr::select(-c(Scientific.Name, Area.Covered..ha., ML.Catalog.Numbers)) %>% 
-  # for uniformity with regular EBD
-  magrittr::set_colnames(c("SAMPLING.EVENT.IDENTIFIER", "COMMON.NAME", "TAXONOMIC.ORDER",
-                           "OBSERVATION.COUNT", "STATE.CODE", "COUNTY", 
-                           "LOCALITY.ID", "LOCALITY", "LATITUDE", "LONGITUDE", 
-                           "OBSERVATION.DATE", "TIME.OBSERVATION.STARTED", "PROTOCOL.TYPE",
-                           "DURATION.MINUTES", "ALL.OBS.REPORTED", "EFFORT.DISTANCE.KM",
-                           "NUMBER.OBSERVERS", "BREEDING.CODE", 
-                           "SPECIES.COMMENTS", "TRIP.COMMENTS"))
+  dplyr::select(-c(SCIENTIFIC.NAME, EFFORT.AREA.HA)) 
 
-# remove spuhs and slashes
+# remove spuhs and slashes (mydata does not contain species category column)
 nonspec <- rawdata %>% 
   filter(str_ends(COMMON.NAME, "sp.") |
            str_detect(COMMON.NAME, "/")) %>% 
   # ignoring slashes in true species
   filter(!(COMMON.NAME %in% c("Long-tailed Shrike (tricolor/longicaudatus)",
-                              "Western Yellow Wagtail (flava/beema)"))) %>% 
+                              "Western Yellow Wagtail (flava/beema)",
+                              "White Wagtail (White-faced/Transbaikalian)",
+                              "Redpoll (Common/Lesser)"))) %>% 
   distinct(COMMON.NAME)
 
 rawdata <- rawdata %>% anti_join(nonspec, by = "COMMON.NAME")
@@ -99,9 +102,10 @@ high_score_hour <- rawdata %>%
 
 # high and low speeds
 stats_speed <- rawdata %>% 
-  filter(ALL.OBS.REPORTED == 1,
+  filter(ALL.SPECIES.REPORTED == 1,
          # removing lists without duration info
          !is.na(DURATION.MINUTES)) %>% 
+  mutate(DURATION.MINUTES = as.integer(DURATION.MINUTES)) %>% 
   group_by(SAMPLING.EVENT.IDENTIFIER) %>% 
   dplyr::summarise(NO.SP = n_distinct(COMMON.NAME),
                    DURATION.MINUTES = min(DURATION.MINUTES)) %>% 
@@ -138,23 +142,72 @@ stats_all <- stats0 %>%
 
 ```
 
-```{r, include=TRUE}
+My birding stats, as analysed from `r tot_lists` checklists. This only includes non--zero-species checklists, and this directly impacts metrics such as lowest speed.
 
-table_caption <- glue("My birding stats, as analysed from {tot_lists} checklists. This only includes non&ndash;zero-species checklists, and this directly impacts metrics such as lowest speed.")
+```{r stats-table, include=TRUE}
 
 # tables of stats
-stats_all %>% 
-  mutate(across(everything(), ~ as.character(.))) %>% 
-  knitr::kable(caption = table_caption, booktabs = TRUE) %>%
-  # first column should be bold
-  column_spec(1, bold = TRUE, width_min = "9em") %>%
-  # adjusting cell widths
-  column_spec(2, width_min = "12em") %>%
-  column_spec(4, width_min = "19em")
+# stats_all %>% 
+#   mutate(across(everything(), ~ as.character(.))) %>% 
+#   gt() %>%
+#   tab_style(
+#     style = cell_text(weight = "bold"),
+#     locations = cells_body(columns = 1)
+#   ) %>%
+#    tab_style(
+#     style = cell_text(align = "left"),
+#     locations = cells_column_labels(everything())
+#   ) %>% 
+#   cols_width(
+#     1 ~ px(144),  # 9em ~ 144px
+#     2 ~ px(192),  # 12em ~ 192px
+#     4 ~ px(304)   # 19em ~ 304px
+#   ) %>%
+#   text_transform(locations = cells_body(c("CHECKLIST")),
+#                  fn = function(x) {
+#                    map_chr(x, ~ as.character(html(
+#                      
+#                      if (.x == "-") .x else paste0( # only hyperlink if list exists
+#                        '<a href="', .x, '" target="_blank">', 
+#                        str_remove_all(.x, "https://ebird.org/checklist/"), 
+#                        '</a>'
+#                      )
+#                      
+#                    )))
+#                  }) %>% 
+#   opt_row_striping(row_striping = TRUE)
+
+
+stats_all %>%
+  mutate(across(everything(), as.character)) %>%
+  reactable(
+    columns = list(
+      CHECKLIST = colDef(
+        html = TRUE,
+        # Create clickable link with the URL as link text
+        cell = function(value) {
+          if (value == "-") value else
+          htmltools::tags$a(href = value, target = "_blank", 
+                            str_remove_all(value, "https://ebird.org/checklist/")) %>% 
+            as.character()
+        }
+      )
+    ),
+    searchable = FALSE,
+    striped = TRUE,
+    highlight = TRUE,
+    theme = NULL,
+    rowStyle = function(index) {
+    if (index %% 2 == 0) {
+      list(background = "transparent")   # even rows transparent
+    } else {
+      list(background = "grey70")       # odd rows inherit page bg
+    }
+  }
+  )
 
 ```
 
-
-# My career mapped {#map}
+# Career mapped {#map}
 
 Spatial visualisation of my eBirding in the style of an eBird profile, but as a bigger sandbox... **Coming soon!**
