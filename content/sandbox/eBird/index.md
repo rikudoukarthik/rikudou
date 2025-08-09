@@ -36,4 +36,12 @@ My birding stats, as analysed from 6325 checklists. This only includes non–zer
 
 # Career mapped
 
+## Explorer Score
+
+Bird Count India’s Explorer Score assessment. Check yours [here](https://birdcountindia.shinyapps.io/Xplorerscore/)!
+
+<img src="explorer_score.jpg" width="1080" />
+
+## Choropleth
+
 Spatial visualisation of my eBirding in the style of an eBird profile, but as a bigger sandbox… **Coming soon!**

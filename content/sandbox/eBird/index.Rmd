@@ -210,4 +210,14 @@ stats_all %>%
 
 # Career mapped {#map}
 
+## Explorer Score
+
+Bird Count India's Explorer Score assessment. Check yours [here](https://birdcountindia.shinyapps.io/Xplorerscore/)!
+
+```{r, include=TRUE}
+knitr::include_graphics(here(cur_dir, "explorer_score.jpg"))
+```
+
+## Choropleth
+
 Spatial visualisation of my eBirding in the style of an eBird profile, but as a bigger sandbox... **Coming soon!**
